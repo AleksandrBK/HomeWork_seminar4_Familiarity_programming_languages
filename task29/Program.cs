@@ -3,3 +3,11 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
+int size = 8;
+int[] array = new int[size];
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = new Random().Next(10, 1001);
+}
+
+Console.WriteLine($"Массив: [{string.Join("; ", array)}]");
